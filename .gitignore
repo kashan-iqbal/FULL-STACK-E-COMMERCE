@@ -1,0 +1,5 @@
+============================================= For Backend ========================================
+# dependencies
+./client/node_modules
+/node_modules
+/.env

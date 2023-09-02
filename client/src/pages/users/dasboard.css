@@ -1,0 +1,11 @@
+#dash-controller {
+  min-height: 87vh;
+  background-color: #e3e6f3;
+  font-family: "League Spartan", sans-serif;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover;
+}
+.row {
+  margin-left: 1rem;
+}

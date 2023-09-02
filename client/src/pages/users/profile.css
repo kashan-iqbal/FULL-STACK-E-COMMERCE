@@ -1,0 +1,72 @@
+#userp-controller {
+  background-color: #e3e6f3;
+  font-family: "League Spartan", sans-serif;
+  background-image: url("../Auth//Register/bg-registration-form-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.form-containerpr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-right: 16rem;
+  font-family: "League Spartan", sans-serif;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover;
+}
+
+.form-containerpr form {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px 20px;
+  background-color: #fff;
+  height: max-content;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-radius: 0.4rem;
+  width: 20rem;
+}
+.form-control {
+  font-size: 0.85rem;
+}
+
+.form-containerpr form .title {
+  text-align: center;
+  margin-bottom: 1.6rem;
+  font-weight: 700;
+  color: #088178;
+  font-size: 1.62rem;
+}
+
+.form-containerpr form input {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  margin-bottom: 0.8rem;
+  color: #171717;
+
+  font-size: 0.9rem;
+}
+
+.form-containerpr form input:active,
+.form-containerpr form input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #434343;
+}
+
+.form-containerpr form button {
+  border: 1px solid #fff;
+  border-radius: 0;
+  background-color: #088178;
+  color: white;
+  margin-top: 0.6rem;
+  width: 100%;
+  transition: 0.5s ease all;
+}
+.form-containerpr form button:hover {
+  background-color: #056962 !important;
+}

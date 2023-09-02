@@ -1,0 +1,32 @@
+.list-group h4 {
+  background-color: #088178;
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 5px 6px;
+
+  border-radius: 4px;
+}
+
+#list {
+  display: block;
+  margin-top: 2rem;
+}
+
+#list .btn {
+  margin-left: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  display: block;
+  margin-top: 0.4rem;
+}
+
+#list .btn {
+  border: 1px solid #088178;
+  margin-left: 4px;
+}
+
+#list .btn:hover {
+  background-color: #088178;
+  color: white;
+}
