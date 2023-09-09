@@ -39,8 +39,8 @@ const CategoryProduct = () => {
       <div className="container mt-3">
         <div>
           <h4 className="text-center" id="cp2_name">
-            <span className="spanner">Category /</span>{" "}
-            {category.name !== undefined && `${category?.name} `}
+            <span className="spanner">Category </span>{" "}
+           ({category.name !== undefined && `${category?.name} `})
           </h4>
           <div className="row mt-5">
             <h2 className="ct_tot"> {products.length} Products Found</h2>

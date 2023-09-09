@@ -29,41 +29,43 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="middle">
+          <div className="col1">
+            <h4>About</h4>
+            <p>
+              <Link to="/">About Us</Link>
+            </p>
+            <p>
+              <Link to="/dashboard/user/orders">Delivery Information</Link>
+            </p>
+            <p>
+              <Link to="/">Privicy &amp; Policy</Link>
+            </p>
+            <p>
+              <Link to="/">Contact Us</Link>
+            </p>
+          </div>
 
-        <div className="col1">
-          <h4>About</h4>
-          <p>
-            <Link to="/">About Us</Link>
-          </p>
-          <p>
-            <Link to="/dashboard/user/orders">Delivery Information</Link>
-          </p>
-          <p>
-            <Link to="/">Privicy &amp; Policy</Link>
-          </p>
-          <p>
-            <Link to="/">Contact Us</Link>
-          </p>
+          <div className="col1">
+            <h4>My Account</h4>
+            <p>
+              <Link to="/login">Sign In</Link>
+            </p>
+            <p>
+              <Link to="/cart">View Cart</Link>
+            </p>
+            <p>
+              <Link to="/dashboard/user">My Profile</Link>
+            </p>
+            <p>
+              <Link to="/dashboard/user/orders">Track My Order</Link>
+            </p>
+            <p>
+              <Link to="/">Help</Link>
+            </p>
+          </div>
         </div>
 
-        <div className="col1">
-          <h4>My Account</h4>
-          <p>
-            <Link to="/login">Sign In</Link>
-          </p>
-          <p>
-            <Link to="/cart">View Cart</Link>
-          </p>
-          <p>
-            <Link to="/dashboard/user">My Profile</Link>
-          </p>
-          <p>
-            <Link to="/dashboard/user/orders">Track My Order</Link>
-          </p>
-          <p>
-            <Link to="/">Help</Link>
-          </p>
-        </div>
         <div className="col install">
           <h4>Install App</h4>
           <p>Form App Store or Google Play</p>
@@ -74,6 +76,7 @@ const Footer = () => {
           <p>Payment Gateway</p>
           <img src={pay} alt="ok" />
         </div>
+
         <div className="copyright">
           <hr />
           <p>

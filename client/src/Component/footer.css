@@ -1,17 +1,24 @@
+
+
 footer {
   display: flex;
-  /* justify-content: space-between !important; */
   flex-wrap: wrap;
 }
 
 footer .col1 {
   display: flex;
   flex-direction: column;
+  text-align: start;
   padding: 10px 20px;
   flex-basis: 25%;
   min-width: 180px;
   margin-bottom: 20px;
 }
+footer .middle{
+  display: flex;
+}
+
+
 footer .col1 p a {
   color: #465b52;
 }
@@ -84,18 +91,3 @@ footer .copyright {
   text-align: center;
 }
 
-@media screen and (max-width: 579px) {
-  footer .col1:first-child img {
-    max-width: 50%;
-    margin: auto;
-    margin-left: 20vw !important;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 798px) {
-  .row {
-    margin-left: 1rem;
-    justify-content: center;
-  }
-}

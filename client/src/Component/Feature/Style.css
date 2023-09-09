@@ -21,6 +21,10 @@
   transform: scale(1.07);
 }
 
+#product1 h2{
+   font-weight: 600;
+}
+
 #feature .fe-box img {
   width: 100%;
   margin-bottom: 10px;
@@ -76,6 +80,6 @@
   }
   #feature .fe-box {
     width: 155px;
-    margin: 15px 14px;
+    margin: 15px 11px 0px 0px;
   }
 }

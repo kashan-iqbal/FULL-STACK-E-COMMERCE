@@ -123,6 +123,7 @@ const Cart = () => {
             </tbody>
           </table>
         </section>
+
         <section id="cart-add" className="section-p1">
           <div id="subtotal">
             <h3>Cart Summary</h3>
@@ -180,6 +181,8 @@ const Cart = () => {
               </tbody>
             </table>
           </div>
+<div id="payment">
+
 
           {!clientToken || !cart?.length ? (
             ""
@@ -203,6 +206,7 @@ const Cart = () => {
               </button>
             </div>
           )}
+          </div>
         </section>
       </div>
     </Layout>

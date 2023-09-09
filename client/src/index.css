@@ -79,11 +79,7 @@ body {
 #hero {
   background-image: url(./img/hero4.png);
 }
-@media screen and (max-width: 900px) {
-  #hero {
-    background-image: url(./pages//Auth//Register/bg-registration-form-1.jpg);
-  }
-}
+
 
 #hero button {
   background-image: url(./img/button.png);
@@ -238,7 +234,8 @@ input::-webkit-inner-spin-button {
   }
   #hero {
     padding: 0px 40px;
-    background-position: 55%;
+    background-position:  55%  55% ;
+
   }
   h1 {
     font-size: 32px;
@@ -252,7 +249,7 @@ input::-webkit-inner-spin-button {
   }
   #feature .fe-box {
     width: 155px;
-    margin: 0px 0px 15px 0px;
+    margin: 15px 11px 0px 0px;
   }
 
   #product1 .pro {
@@ -279,7 +276,7 @@ input::-webkit-inner-spin-button {
   }
 
   .section-p1 {
-    padding: 40px 20px;
+    padding: 40px 5px;
   }
 
   .newsletter .form {
@@ -289,6 +286,32 @@ input::-webkit-inner-spin-button {
   footer .copyright {
     text-align: start;
   }
+
+
+
+
+
+
+
+
+  #product1 .pro {
+    width: 46%;
+    min-width: 120px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 6px;
+    transition: 0.2s ease;
+    position: relative;
+  }
+
+
+
+
+
+
 }
 
 
