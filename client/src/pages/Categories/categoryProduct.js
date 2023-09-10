@@ -33,14 +33,14 @@ const CategoryProduct = () => {
   return (
     <Layout title={"Category Wise Products"}>
       <section id="products-header">
-        <h2>#explorenow</h2>
+        <h2>#expow</h2>
         <p>Dont Forget to Add Your Favourite Item in Cart</p>
       </section>
       <div className="container mt-3">
         <div>
           <h4 className="text-center" id="cp2_name">
-            <span className="spanner">Category </span>{" "}
-           ({category.name !== undefined && `${category?.name} `})
+            <span className="spanner">Category </span> (
+            {category.name !== undefined && `${category?.name} `})
           </h4>
           <div className="row mt-5">
             <h2 className="ct_tot"> {products.length} Products Found</h2>
@@ -48,40 +48,45 @@ const CategoryProduct = () => {
               <br />
             </div>
           </div>
-          <div id="product1_new">
-            {products?.map((p) => (
-              <Link to={`/product/${p.slug}`} style={{ width: "min-content" }}>
-                <div className="pro" key={p._id}>
-                  <img
-                    src={`/api/v1/products/product-photo/${p._id}`}
-                    alt={p.name}
-                  />
-                  <div className="des">
-                    <h5>{p.name}</h5>
-                    <div className="start">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
+          <div id="main_continer">
+            <div id="product_container">
+              {products?.map((p) => (
+                <Link
+                  to={`/product/${p.slug}`}
+                  style={{ width: "min-content" }}
+                >
+                  <div className="pro" key={p._id}>
+                    <img
+                      src={`/api/v1/products/product-photo/${p._id}`}
+                      alt={p.name}
+                    />
+                    <div className="des">
+                      <h5>{p.name}</h5>
+                      <div className="start">
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                        <i className="fas fa-star" />
+                      </div>
+                      <h4>$ {p.price}</h4>
                     </div>
-                    <h4>$ {p.price}</h4>
+                    <Link
+                      onClick={() => {
+                        setCart([...cart, p]);
+                        localStorage.setItem(
+                          "cart",
+                          JSON.stringify([...cart, p])
+                        );
+                        toast.success("Item added TO Cart");
+                      }}
+                    >
+                      <i className="fa fal fa-shopping-cart" />
+                    </Link>
                   </div>
-                  <Link
-                    onClick={() => {
-                      setCart([...cart, p]);
-                      localStorage.setItem(
-                        "cart",
-                        JSON.stringify([...cart, p])
-                      );
-                      toast.success("Item added TO Cart");
-                    }}
-                  >
-                    <i className="fa fal fa-shopping-cart" />
-                  </Link>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>

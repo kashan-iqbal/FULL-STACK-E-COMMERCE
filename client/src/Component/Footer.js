@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <>
       <footer className="section-p1">
+        
         <div className="col1">
           <img src={logo} alt="ok" />
           <p>
@@ -29,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="middle">
+
           <div className="col1">
             <h4>About</h4>
             <p>
@@ -64,9 +65,10 @@ const Footer = () => {
               <Link to="/">Help</Link>
             </p>
           </div>
-        </div>
 
-        <div className="col install">
+
+
+        <div className="col col1 install">
           <h4>Install App</h4>
           <p>Form App Store or Google Play</p>
           <div className="footer-row row">

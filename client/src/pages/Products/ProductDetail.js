@@ -63,7 +63,7 @@ const ProductDetail = () => {
         </div>
         <div className="single-pro-details">
           {product && (
-            <div key={product._id} id="detail">
+            <div key={product._id}>
               <h6>{product?.category?.name}</h6>
               <h4>{product?.name}</h4>
               <h2>{product?.price} $</h2>
@@ -98,7 +98,7 @@ const ProductDetail = () => {
         <h2>Related Product</h2>
         <p>Summer Collection New Arival Desigin</p>
 
-        <div className="proContainer_new">
+        <div className="proContainer">
           {relatedProducts?.map((p) => (
             <Link
               to={`/dashboard/admin/update-product/${p.slug}`}
