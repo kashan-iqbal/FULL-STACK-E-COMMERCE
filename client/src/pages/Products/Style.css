@@ -63,6 +63,14 @@ I #prodetails .single-pro-details input:focus {
 }
 
 
+
+.proContainer_new {
+  display: flex;
+  /* justify-content: space-around; */
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
 /* Single Product */
 @media (max-width: 800px) {
   #prodetails {
@@ -86,8 +94,5 @@ I #prodetails .single-pro-details input:focus {
   .right{
     float: right;
   }
-  #detail h6 h4 h2{
-    background-color: red;
-  
-  }
+
 }
