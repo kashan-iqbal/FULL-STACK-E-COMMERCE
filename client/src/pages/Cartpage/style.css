@@ -164,3 +164,23 @@
     padding: 10px 5px 10px 13px;
   }
 }
+
+
+@media (max-width: 999px) {
+  #cart-add{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  #subtotal{
+    width: 100%;
+  }
+  #subtotal h3{
+    width: fit-content;
+    margin: auto;
+
+  }
+  .payment_container{
+    width: 100%;
+  }
+}

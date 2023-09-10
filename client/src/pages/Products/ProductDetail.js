@@ -63,7 +63,7 @@ const ProductDetail = () => {
         </div>
         <div className="single-pro-details">
           {product && (
-            <div key={product._id}>
+            <div key={product._id} id="detail">
               <h6>{product?.category?.name}</h6>
               <h4>{product?.name}</h4>
               <h2>{product?.price} $</h2>
@@ -75,7 +75,7 @@ const ProductDetail = () => {
                 <option>Large</option>
               </select>
               <button
-                className="normal"
+                className="normal right"
                 onClick={() => {
                   setCart([...cart, product]);
                   localStorage.setItem(

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Layout from "../../Component/Layout";
 import { prices } from "../../Component/Prices";
 import { useCart } from "../../context/Cart";
-import "./style.css"
+import "./style.css";
 
 const ShopPage = () => {
   const [products, setProduct] = useState([]);
@@ -122,10 +122,11 @@ const ShopPage = () => {
   return (
     <Layout title={"All-Products"}>
       <section id="products-header">
-        <h2>#stayhome</h2>
+        <h2>#Stay</h2>
         <p>Save More with Coupons & upto 70% off</p>
       </section>
-      <h2 style={{ marginTop: "4rem", textAlign: "center" }}>All Products</h2>
+      <h2 id="up" style={{  marginTop: "4rem", textAlign: "center" ,fontWeight:"600"}}>All Products</h2>
+
       <section id="product1_new" className="section-p1">
         <div className="filters ">
           <h2
@@ -134,45 +135,58 @@ const ShopPage = () => {
           >
             Filters
           </h2>
-          <div className=" mt-5 p-5">
+          <div className=" mt-5 p-2 ">
             {/*                    filter by price                 */}
-            <h4 className="mt-5" style={{ color: "#088178", fontWeight: 600 }}>
-              Filter By catageory
-            </h4>
-            <div className="d-flex flex-column ">
-              {catageory?.map((c) => (
-                <Checkbox
-                  key={c._id}
-                  onChange={(e) => handlerFilter(e.target.checked, c._id)}
-                  style={{
-                    color: "#858992",
-                    fontWeight: 600,
-                    marginBottom: ".2rem",
-                    fontSize: "1rem",
-                  }}
+            <div id="filter_container">
+              <div id="filter_catageory">
+                <h4
+                  className="mt-5"
+                  style={{ color: "#088178", fontWeight: 600 }}
                 >
-                  {c.name}
-                </Checkbox>
-              ))}
+                  Filter By catageory
+                </h4>
+                <div className="d-flex flex-column ">
+                  {catageory?.map((c) => (
+                    <Checkbox
+                    key={c._id}
+                    onChange={(e) => handlerFilter(e.target.checked, c._id)}
+                    style={{
+                      color: "#858992",
+                      fontWeight: 600,
+                      marginBottom: ".2rem",
+                      fontSize: "1rem",
+                    }}
+                    >
+                      {c.name}
+                    </Checkbox>
+                  ))}
+                </div>
+              </div>
+
+              <div id="filter_price">
+                <h4
+                  className=" mt-5"
+                  style={{ color: "#088178", fontWeight: 600 }}
+                >
+                  Filter By price
+                </h4>
+                <div className="d-flex flex-column ">
+                  <Radio.Group onChange={(e) => setRadio(e.target.value)}>
+                    {prices?.map((p) => (
+                      <div key={p.id} style={{ width: "max-content" }}>
+                        <Radio
+                          value={p.array}
+                          style={{ color: "#858992", fontWeight: 600 }}
+                        >
+                          {p.name}
+                        </Radio>
+                      </div>
+                    ))}
+                  </Radio.Group>
+                </div>
+              </div>
             </div>
 
-            <h4 className=" mt-5" style={{ color: "#088178", fontWeight: 600 }}>
-              Filter By price
-            </h4>
-            <div className="d-flex flex-column ">
-              <Radio.Group onChange={(e) => setRadio(e.target.value)}>
-                {prices?.map((p) => (
-                  <div key={p.id} style={{ width: "max-content" }}>
-                    <Radio
-                      value={p.array}
-                      style={{ color: "#858992", fontWeight: 600 }}
-                    >
-                      {p.name}
-                    </Radio>
-                  </div>
-                ))}
-              </Radio.Group>
-            </div>
             <div className="d-flex flex-column ">
               <button
                 className="reset_filters"
@@ -183,6 +197,8 @@ const ShopPage = () => {
             </div>
           </div>
         </div>
+                    <h2 id="down" style={{  marginTop: "4rem", textAlign: "center" ,fontWeight:"600"  }}>All Products</h2>
+        {/* ===============PRODUCT CARD============== */}
         <div className="proContainer_new ">
           {products?.map((p) => (
             <Link

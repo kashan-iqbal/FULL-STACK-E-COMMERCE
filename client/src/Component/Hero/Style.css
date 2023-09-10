@@ -2,12 +2,12 @@
   height: 90vh;
   width: 100%;
   background-size: cover;
-  background-position: top 25% right 0%;
+  background-position: top 39% right 60%;
   background-repeat: no-repeat;
   padding: 0px 80px;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -56,6 +56,10 @@
   .section-p1 {
     padding: 40px 40px;
   }
+  #hero {
+    padding: 0px 40px;
+    background-position: top 39% right 90
+  }
 }
 
 @media (max-width: 477px) {
@@ -65,7 +69,7 @@
 
   #hero {
     padding: 0px 40px;
-    background-position: 55%;
+    background-position: top 55% right 55%;
   }
 
   #hero h1 {
@@ -86,61 +90,8 @@
   }
 }
 
-@media screen and (max-width: 1020px) {
-  #hero h4 {
-    font-size: 1.6rem;
-    padding-bottom: 12px;
-  }
 
-  #hero h2 {
-    font-size: 3.96rem;
-    font-weight: 600;
-    color: #0e0f17;
-    margin-bottom: 1rem;
-  }
 
-  #hero h1 {
-    font-size: 4rem;
-    color: #088178;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-  }
-
-  #hero p {
-    font-size: 1.16rem;
-    color: #0e0f17;
-    color: #858992;
-    margin-bottom: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 1020px) {
-  #hero h4 {
-    font-size: 1.32rem;
-    padding-bottom: 12px;
-  }
-
-  #hero h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-    color: #0e0f17;
-    margin-bottom: 1rem;
-  }
-
-  #hero h1 {
-    font-size: 3.5rem;
-    color: #088178;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-  }
-
-  #hero p {
-    font-size: 1.06rem;
-    color: #0e0f17;
-    color: #858992;
-    margin-bottom: 1.2rem;
-  }
-}
 @media screen and (max-width: 609px) {
   #hero h4 {
     font-size: 1.22rem;
@@ -168,48 +119,9 @@
     margin-bottom: 1.2rem;
   }
 }
-@media screen and (max-width: 609px) {
-  #hero h4 {
-    font-size: 1.2rem;
-    padding-bottom: 4px;
-  }
 
-  #hero h2 {
-    font-size: 3rem;
-    font-weight: 600;
-    color: #0e0f17;
-    margin-bottom: 0.3rem;
-  }
 
-  #hero h1 {
-    font-size: 3rem;
-    color: #088178;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
 
-  #hero p {
-    font-size: 1rem;
-    color: #0e0f17;
-    color: #858992;
-    margin-bottom: 1.2rem;
-  }
-}
-@media screen and (max-width: 609px) {
-  #hero h4 {
-    font-size: 1rem;
-    padding-bottom: 4px;
-  }
-  #hero h2 {
-    font-size: 2.6rem;
-    margin-bottom: 0.3rem;
-  }
-
-  #hero h1 {
-    font-size: 2.6rem;
-    margin-bottom: 0.2rem;
-  }
-}
 @media screen and (max-width: 402px) {
   #hero h4 {
     font-size: 0.94rem;

@@ -41,7 +41,7 @@ const Header = () => {
           <SearchForm />
           <li>
             <Link className={location.pathname === "/" ? "active" : ""} to="/">
-              home
+              Home
             </Link>
           </li>
           <li>
@@ -49,12 +49,12 @@ const Header = () => {
               to="/all-products"
               className={location.pathname === "/all-products" ? "active" : ""}
             >
-              shop
+              Shop
             </Link>
           </li>
           <li>
             <div className="dropdown">
-              <button className="dropbtn">categories</button>
+              <button className="dropbtn">Categories</button>
               <div className="dropdown-content">
                 {categories?.map((c) => (
                   <div key={c._id} className="text-start py-2 px-4 ">
@@ -72,7 +72,7 @@ const Header = () => {
                   to="/login"
                   className={location.pathname === "/login" ? "active" : ""}
                 >
-                  login
+                  Login
                 </Link>
               </li>
               <li>
@@ -80,7 +80,7 @@ const Header = () => {
                   to="/register"
                   className={location.pathname === "/register" ? "active" : ""}
                 >
-                  register
+                  Register
                 </Link>
               </li>
             </>
