@@ -24,10 +24,12 @@ import ShopPage from "./pages/Shopage";
 import Orders from "./pages/users/Orders";
 import Profile from "./pages/users/Profile";
 import Dashboard from "./pages/users/dashboard";
+import ScrollToTop from "./Scroll/scrollFunction";
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/all-products" element={<ShopPage />} />

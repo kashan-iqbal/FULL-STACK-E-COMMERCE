@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: initial !important;
   text-decoration: none !important;
 }
 
