@@ -1,0 +1,204 @@
+#sm-banner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* background: url(./img/banner/b17.jpg); */
+  background-repeat: no-repeat;
+  min-width: 530px;
+  height: 50vh;
+  background-position: 55% 7%;
+  background-size: cover;
+  padding: 30px;
+}
+#sm-banner .banner-box2 {
+  /* background: url(./img/banner/b10.jpg); */
+  margin-top: 0.4rem;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 520px;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+
+#sm-banner h4 {
+  font-weight: 800;
+  font-size: 20px;
+  color: #fff;
+}
+
+#sm-banner h2 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #fff;
+}
+
+#sm-banner span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner .banner-box:hover a {
+  background-color: #088178;
+  border: 2px solid #088178;
+}
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #sm-banner .banner-box {
+    width: 80% !important;
+    height: 30vh;
+    min-width: 429px;
+    margin-bottom: 2rem;
+  }
+  #sm-banner .banner-box2 {
+    width: 100%;
+    height: 30vh;
+    min-width: 429px;
+  }
+}
+
+@media (max-width: 666px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0px 20px;
+  }
+
+  #banner3 .banner-box {
+    margin-top: 20px;
+
+    width: 100%;
+  }
+
+  /* .section-p1 {
+      padding: 40px 20px;
+    } */
+}
+
+@media (max-width: 477px) {
+  /* .section-p1 {
+      padding: 20px;
+    } */
+
+  #sm-banner .banner-box {
+    min-width: 50%;
+    height: 40vh;
+    margin: 20px 40px !important;
+  }
+
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0px 20px;
+  }
+
+  #banner3 .banner-box {
+    width: 100%;
+  }
+  .section-p1 {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 450px) {
+  #sm-banner h2 {
+    font-size: 20px !important;
+    /* display: none; */
+  }
+}
+
+/* ============================= QUERRY FORM============================================= */
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+.banner-box a {
+  display: inline-block !important;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: 0.8s ease-in-out all;
+}
+
+.newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+.newsletter p span {
+  color: #ffdb27;
+}
+
+.newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+.newsletter input {
+  height: 3.125rem;
+  width: 100%;
+  padding: 0 1.25em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  .newsletter .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  .newsletter .form {
+    width: 100%;
+  }
+}

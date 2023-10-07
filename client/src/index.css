@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  scroll-behavior: initial !important;
+  text-decoration: none !important;
+}
+
+h1 {
+  color: black;
+  font-size: 50px;
+  line-height: 64px;
+}
+
+h2 {
+  color: black;
+  font-size: 48px;
+  line-height: 54px;
+}
+
+h4 {
+  color: black;
+  font-size: 20px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 12px 0px 20px 0px;
+}
+
+.section-p1 {
+  padding: 40px 40px;
+}
+.section-m1 {
+  margin: 40px 0px;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.3s;
+}
+
+body {
+  width: 100%;
+}
+
+/* ==================================HERO SECTION================================== */
+
+#hero {
+  background-image: url(./img/hero4.png);
+}
+
+#hero button {
+  background-image: url(./img/button.png);
+}
+
+/* ==================================BANNER================================== */
+
+#banner {
+  background: url(./img/banner/b2.jpg);
+}
+
+/* =================================SM =BANNER================================== */
+
+#sm-banner .banner-box {
+  background: url(./img/banner/b17.jpg);
+  background-repeat: no-repeat;
+  background-position: 55% 7%;
+}
+#sm-banner .banner-box2 {
+  background: url(./img/banner/b10.jpg);
+  background-repeat: no-repeat;
+}
+
+/* =================================SM =BANNER================================== */
+.newsletter button {
+  color: #fff;
+  background-color: #088178;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.newsletter {
+  background-image: url(./img/banner/b14.png);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ===================MEDIA QUERRY================================== */
+
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0px 0px 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+    align-items: center;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    color: #1a1a1a;
+    padding-left: 20px;
+  }
+  #close {
+    display: inherit;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .fe-box {
+    margin: 15px 15px;
+  }
+
+  #product1 .proContainer {
+    justify-content: center;
+  }
+
+  #product1 .pro {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 20vh;
+  }
+
+  #sm-banner .banner-box {
+    width: 100%;
+    height: 30vh;
+  }
+
+  #banner3 {
+    padding: 0px 40px;
+  }
+  #banner3 .banner-box {
+    width: 28%;
+  }
+
+  #banner3 .banner-box2 {
+    width: 28%;
+  }
+
+  #banner3 .banner-box3 {
+    width: 28%;
+  }
+  .newsletter .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  #sm-banner .banner-box {
+    margin: 20px 40px;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+  #hero {
+    padding: 0px 40px;
+    background-position: 55% 55%;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+
+  #feature {
+    justify-content: space-between;
+  }
+  #feature .fe-box {
+    width: 155px;
+    margin: 15px 11px 0px 0px;
+  }
+
+  #product1 .pro {
+    width: 100%;
+  }
+
+  #banner {
+    height: 40vh;
+  }
+
+  #sm-banner .banner-box {
+    min-width: 50%;
+    height: 40vh;
+  }
+  #sm-banner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0px 20px;
+  }
+
+  #banner3 .banner-box {
+    width: 100%;
+  }
+
+  .section-p1 {
+    padding: 40px 0px;
+  }
+
+  .newsletter .form {
+    width: 100%;
+  }
+
+  footer .copyright {
+    text-align: start;
+  }
+
+  footer .install img {
+    width: 170px;
+  }
+
+  #product1 .pro {
+    width: 46%;
+    min-width: 120px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 6px;
+    transition: 0.2s ease;
+    position: relative;
+  }
+}

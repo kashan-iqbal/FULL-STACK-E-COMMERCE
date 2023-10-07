@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  height: 85vh;
+
+}
+
+.left {
+  height: 36vh;
+  padding: 4% 7%; 
+  width: 60%;
+}
+
+.right img {
+  /* padding-top: 5%; */
+  height: 70%;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    height: 100%;
+    display: block;
+  }
+  .right img {
+    width: 100% !important ; 
+  }
+
+  .left {
+    /* padding: 10% 5%; */
+    height: 50%;
+    width: 100%;
+  }
+  .right {
+    height: 50%;
+    width: 100%;
+  }
+
+  
+}

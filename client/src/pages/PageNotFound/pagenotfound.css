@@ -1,0 +1,44 @@
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 91vh;
+  background-color: #e3e6f3;
+  font-family: "League Spartan", sans-serif;
+  background-image: url("../Auth/Register/bg-registration-form-1.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-size: cover;
+}
+
+.child_container h2 {
+  display: flex;
+  align-items: center;
+  color: #088178;
+  justify-content: center;
+  font-size: 700%;
+  margin-bottom: 1.3rem !important;
+}
+.child_container h3 {
+  color: #696969;
+}
+.Btn {
+  width: max-content;
+  font-size: 1.08rem;
+  margin: 1.4rem auto;
+  display: flex;
+  border: 2px solid #088178;
+  border-radius: 0.4rem;
+  padding: 7px 15px;
+  text-decoration: none;
+  background: transparent;
+  transition: 0.4s ease-in all;
+  color: #088178;
+  font-weight: 500 !important;
+}
+
+.Btn:hover {
+  background-color: #088178;
+  color: #fff !important;
+}
